@@ -1,15 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+//ejercicio de crear una lista de 100 datos reales(2)
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        List<Double> arrayList = new ArrayList<>();
+        List<Double> linkedList = new LinkedList<>();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Random random = new Random();
+
+        for (int i = 0; i < 100; i++) {
+            double randomNumber = random.nextDouble();
+            arrayList.add(randomNumber);
+            linkedList.add(randomNumber);
+        }
+
+        System.out.println("Elementos en ArrayList:");
+        for (Double number : arrayList) {
+            System.out.println(number);
+        }
+
+        System.out.println("\nElementos en LinkedList:");
+        for (Double number : linkedList) {
+            System.out.println(number);
         }
     }
 }
