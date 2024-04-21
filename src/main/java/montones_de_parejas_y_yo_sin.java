@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-public class montones_de_parejas_y_yo_sin
+public class montones_de_parejas_y_yo_sin {
     public static void main(String[] args) {
         // Creamos una lista para almacenar las parejas
         List<Pareja<Integer, Integer>> parejaList = new ArrayList<>();
